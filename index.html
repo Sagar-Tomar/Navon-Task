@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Navon Task</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="preload" as="script" href="app.js">
+</head>
+<body>
+    <div class="task-container">
+        <h1 id="navon" align="center"> Navon Task</h1>
+        <div class="img-cont">
+            <img id="prompt" src="./img/keyboard.png" >
+        </div>
+        <div class="controls">  
+            <button id="start" type=button onclick="fixation()"> Start</button>
+            <button onClick="window.location.reload();">Reset</button>
+        </div>
+      
+        <div  class="outputs">
+            <button id="download" type="button" onclick="generateCSV()">Download</button>
+            <button id="copyText" type="button" onclick="copyMyText('log2')">Click here to copy the output</button>
+        </div>
+        <div class="results">  
+            <p id="log1">If you see letter "E", press the key 'm' or if you viewing letter 'H', press the key 'z'. After the session, the results will be displayed here. You can either download the results or copy it on clipboard.</p>
+        </div>
+        <div class="results2">
+            <p id="log2"></p>
+        </div>
+        <br>
+        <div class="footer"><p id="designedBy">designed by: <a href="https://lsr.hbcse.tifr.res.in/">Learning Sciences Research Group, HBCSE</a></p>
+        </div>
+    </div>
+  
+    <script src="app.js" type="text/javascript"></script>
+    <script src="moment.min.js"></script>
+   
+</body>
+</html>
