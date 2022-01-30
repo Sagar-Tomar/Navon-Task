@@ -6,13 +6,20 @@
 
 body{
     height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+    background: linear-gradient(rgb(183, 100, 200),rgb(99, 109, 167));
+    font-family: sans-serif;
+    color: white;
+}
+
+.task-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(183, 100, 200),rgb(99, 109, 167));
-    font-family: sans-serif;
-    color: white;
 }
 
 .img-cont{
@@ -32,6 +39,19 @@ body{
     font-size: 11px;
     flex-direction: row;
     padding:2px;
+}
+
+.paragraphTestContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.paraTestContainer{
+    width: 80%;
+    background-color: white;
+    font-size: 11px;
+    color: black;
+    padding: 16px;
 }
 
 

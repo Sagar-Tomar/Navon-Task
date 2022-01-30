@@ -9,8 +9,17 @@
      <link rel="preload" as="script" href="app.js">
 </head>
 <body>
-    <div class="task-container">
+    <button id="launchParagraphTest" type="button" onclick="launchParagraphTest()">Launch Paragraph Test</button>
+    <button style="visibility: hidden; float: right;" id="exitParagraphTest" type="button" onclick="exitParagraphTest()">Exit Test</button>
+    <div style="visibility: hidden;" id="taskContainer2" class="paragraphTestContainer">
+     <div id="paragraphDetailsId" class="paraTestContainer">
+        
+     </div>
+
+    </div>
+    <div id="taskContainer1" class="task-container">
         <h1 id="navon" align="center"> Navon Task</h1>
+        
         <div class="img-cont">
             <img id="prompt" src="./img/keyboard.png" >
         </div>
